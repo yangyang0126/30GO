@@ -1,0 +1,35 @@
+<!--pages/planin/planin.wxml-->
+
+<van-cell-group>
+  <van-field value="{{ name }}" label="昵称" placeholder="请输入你的昵称" required bind:change="onChangeName" /> 
+  <van-field value="{{ learn }}" label="学习" placeholder="你打算学习什么新知识？" required type="textarea" autosize
+    bind:change="onChangeLearn" />
+  <van-field value="{{ certificate }}" label="证书" placeholder="你打算考个证书吗？" required type="textarea" autosize
+    bind:change="onChangeCer" />
+  <van-field value="{{ read }}" label="读书" placeholder="你打算看几本书呢？有预设书单吗？" required type="textarea" autosize
+    bind:change="onChangeRead" />
+  <van-field value="{{ change }}" label="改变" placeholder="你的工作、生活期待有哪些改变呢？" required type="textarea" autosize
+    bind:change="onChangeChange" />
+  <van-field value="{{ city }}" label="城市" placeholder="你打算去哪里旅游？或者要换城市吗？" required type="textarea" autosize
+    bind:change="onChangeCity" />
+  <van-field value="{{ sport }}" label="运动" placeholder="你有哪些运动计划呢？" required type="textarea" autosize
+    bind:change="onChangeSport" />
+  <van-field value="{{ text }}" label="留言" placeholder="给2021年12月的自己留句话吧" type="textarea" autosize
+    bind:change="onChangeText" />
+
+</van-cell-group>
+<view class="text">
+  <text>
+    如果你填写了收件地址，我们将在2021年末，将这句话，以明信片的形式寄给你哟
+  </text>
+</view>
+
+<van-cell-group>
+  <van-field value="{{ address }}" label="地址" placeholder="明信片收件地址" type="textarea" autosize
+    bind:change="onChangeAddress" />
+  <van-field value="{{ code }}" label="邮编" placeholder="明信片收件邮编" type="textarea" bind:change="onChangeCode" />
+</van-cell-group>
+
+<button bindtap="insert" class="button">提交</button>
+
+<van-cell is-link title="查看你的年度flag" link-type="switchTab" url="/pages/plan/plan" />

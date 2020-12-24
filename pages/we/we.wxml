@@ -1,0 +1,19 @@
+<!--pages/we/we.wxml-->
+<swiper style="height:{{height}}px">
+
+<swiper-item>
+  <scroll-view scroll-y="true" style="width:{{width}}px;height:{{height}}px" class="page">
+    <view class="title">
+      <text>30+</text>
+    </view>
+
+    <van-image wx:for="{{Img}}" wx:key="item" width="{{widthImg}}" height="{{widthImg}}" fit="cover" src="{{item}}"
+      class="img" bind:click="onClickImg" data-id='{{item.id}}' data-url='{{item}}' />
+
+    <view class="text">
+      <text></text>
+    </view>
+
+  </scroll-view>
+</swiper-item>
+</swiper>

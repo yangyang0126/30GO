@@ -1,0 +1,97 @@
+<!--pages/summary/summary.wxml-->
+<swiper style="height:{{height}}px">
+  <swiper-item>
+    <scroll-view scroll-y="true" style="width:{{width}}px;height:{{height}}px">
+      <view class="year">
+  
+          <van-tag color="#175552" size="large">2020</van-tag>
+     
+          <van-tag plain class="year-last" color="#175552" size="large">2019传送门—></van-tag>
+      
+       
+      </view>
+
+      <view class="summary" wx:for="{{summary2020}}" wx:key="item">
+
+        <van-divider contentPosition="right"
+          customStyle="color: #175552; border-color: #175552; font-size: 16px;font-weight: bold;  ">
+          {{item.name}}
+        </van-divider>
+        <view class="part">
+          <van-tag color="#ff9200" class="part-title">学习</van-tag>
+          <text class="part-text">{{item.learn}}</text>
+        </view>
+        <view class="part">
+          <van-tag color="#ff9200" class="part-title">证书</van-tag>
+          <text class="part-text">{{item.certificate}}</text>
+        </view>
+        <view class="part">
+          <van-tag color="#ff9200" class="part-title">读书</van-tag>
+          <text class="part-text">{{item.read}}</text>
+        </view>
+        <view class="part">
+          <van-tag color="#ff9200" class="part-title">运动</van-tag>
+          <text class="part-text">{{item.sport}}</text>
+        </view>
+        <view class="part">
+          <van-tag color="#ff9200" class="part-title">城市</van-tag>
+          <text class="part-text">{{item.city}}</text>
+        </view>
+        <view class="part">
+          <van-tag color="#ff9200" class="part-title">改变</van-tag>
+          <text class="part-text">{{item.change}}</text>
+        </view>
+        <view class="part">
+          <van-tag color="#ff9200" class="part-title">时间</van-tag>
+          <text class="part-text">{{item.time}} 留下总结</text>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+
+  <swiper-item>
+    <scroll-view scroll-y="true" style="width:{{width}}px;height:{{height}}px">
+      <view class="year">
+        <van-tag color="#175552" size="large">2019</van-tag>
+      </view>
+
+      <view class="summary" wx:for="{{summary2019}}" wx:key="item">
+
+        <van-divider contentPosition="right"
+          customStyle="color: #175552; border-color: #175552; font-size: 16px;font-weight: bold;  ">
+          {{item.name}}
+        </van-divider>
+        <view class="part">
+          <van-tag color="#ff9200" class="part-title">学习</van-tag>
+          <text class="part-text">{{item.learn}}</text>
+        </view>
+        <view class="part">
+          <van-tag color="#ff9200" class="part-title">证书</van-tag>
+          <text class="part-text">{{item.certificate}}</text>
+        </view>
+        <view class="part">
+          <van-tag color="#ff9200" class="part-title">读书</van-tag>
+          <text class="part-text">{{item.read}}</text>
+        </view>
+        <view class="part">
+          <van-tag color="#ff9200" class="part-title">运动</van-tag>
+          <text class="part-text">{{item.sport}}</text>
+        </view>
+        <view class="part">
+          <van-tag color="#ff9200" class="part-title">城市</van-tag>
+          <text class="part-text">{{item.city}}</text>
+        </view>
+        <view class="part">
+          <van-tag color="#ff9200" class="part-title">改变</van-tag>
+          <text class="part-text">{{item.change}}</text>
+        </view>
+        <view class="part">
+          <van-tag color="#ff9200" class="part-title">时间</van-tag>
+          <text class="part-text">{{item.time}} 留下总结</text>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+
+
+</swiper>

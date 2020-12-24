@@ -1,0 +1,46 @@
+{
+  "pages":[    
+    "pages/plan/plan", 
+    "pages/planin/planin",   
+    "pages/summary/summary",
+    "pages/we/we"  ,
+    "pages/about/about"  
+  ],
+  
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "30 GO",
+    "navigationBarTextStyle":"black"
+  },
+
+  "tabBar": {
+    "color": "#175552",
+    "selectedColor": "#ff9200",
+    "list": [{
+      "pagePath": "pages/plan/plan",
+      "text": "年度计划",
+      "iconPath": "img/statistics-selected-g.png",
+      "selectedIconPath": "img/statistics-selected.png"
+    },{
+      "pagePath": "pages/summary/summary",
+      "text": "年度总结",
+      "iconPath": "img/sum.png",
+      "selectedIconPath": "img/sum-check.png"
+    },{
+      "pagePath": "pages/we/we",
+      "text": "小组相册",
+      "iconPath": "img/相机-g.png",
+      "selectedIconPath": "img/相机-o.png"
+    },{
+      "pagePath": "pages/about/about",
+      "text": "关于我们",
+      "iconPath": "img/customer-selected.png",
+      "selectedIconPath": "img/customer-selected-y.png"
+    }]
+  },
+
+  "sitemapLocation": "sitemap.json"
+
+
+}

@@ -1,0 +1,26 @@
+/* pages/we/we.wxss */
+.page{
+  background-color: #175552;
+}
+
+.title{
+  font-size: 38px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  color: #ffffff;
+}
+
+.text{
+  font-size: 15px;  
+  margin-left: 10px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  color: white;
+}
+
+.img{
+  margin-left: 8px;     
+}
+

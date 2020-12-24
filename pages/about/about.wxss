@@ -1,0 +1,17 @@
+/* pages/about/about.wxss */
+.page{
+  background-color: #175552;
+  color: #ffffff;
+}
+
+.img{
+  margin-top:20px;
+  margin-left: 20px;
+  margin-bottom:20px;
+}
+
+.text{
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}

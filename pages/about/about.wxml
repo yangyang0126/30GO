@@ -1,0 +1,40 @@
+<!--pages/about/about.wxml-->
+<view class="page">
+
+
+<image src="cloud://go30-3g574nok08bc31ef.676f-go30-3g574nok08bc31ef-1304589632/微信图片_20201209093523.png" mode="widthFix" class="img"></image>
+
+<van-cell-group>
+  <van-cell title="公众号" value="30 GO" />
+  <van-cell title="网站" value="https://www.notion.so/30-GO-aee4be91176b45919a64e558b4817a51" />
+  <van-cell title="邮箱" value="restart30go@163.com" label="欢迎投稿、留言、反馈问题" border="{{ false }}" />
+</van-cell-group>
+
+
+  <view class="text">开发成员</view>
+
+<van-cell-group>
+  <van-cell title="小程序" value="洋阳" />
+  <van-cell title="网站" value="Grit" />
+  <van-cell title="设计" value="Sekoan" />
+</van-cell-group>
+
+
+
+  <view class="text">群负责人</view>
+
+<van-cell-group> 
+  <van-cell title="技术群" value="洋阳" />
+  <van-cell title="读书群" value="Abbey" />
+  <van-cell title="翻译群" value="薇" />
+  <van-cell title="口语群" value="喵喵怪" />
+  <van-cell title="单词群" value="胖虎" />
+  <van-cell title="运动群" value="羽琪" />
+  <van-cell title="练字群" value="罱" />
+  <van-cell title="资源群" value="york" />
+  <van-cell title="遇见群" value="林深培" />  
+</van-cell-group>
+
+
+
+</view>
