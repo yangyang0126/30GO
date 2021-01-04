@@ -1,0 +1,31 @@
+<!--pages/planin/planin.wxml-->
+
+<van-cell-group>
+  <van-field value="{{ name }}" label="昵称" placeholder="请输入你的昵称" required bind:change="onChangeName" />
+  <van-field value="{{ learn }}" label="学习" placeholder="你学习了什么新知识呢？" required type="textarea" autosize
+    bind:change="onChangeLearn" />
+  <van-field value="{{ certificate }}" label="证书" placeholder="你有考个证书吗？" required type="textarea" autosize
+    bind:change="onChangeCer" />
+  <van-field value="{{ read }}" label="读书" placeholder="你看了几本书呢？有哪些好书推荐？" required type="textarea" autosize
+    bind:change="onChangeRead" />
+  <van-field value="{{ change }}" label="改变" placeholder="你的工作、生活有哪些改变呢？" required type="textarea" autosize
+    bind:change="onChangeChange" />
+  <van-field value="{{ city }}" label="城市" placeholder="你去哪里旅游了呢？或者在哪里定居？" required type="textarea" autosize
+    bind:change="onChangeCity" />
+  <van-field value="{{ sport }}" label="运动" placeholder="完成了哪些运动计划呢？" required type="textarea" autosize
+    bind:change="onChangeSport" />
+  <van-field value="{{ people }}" label="人物" placeholder="今年对你影响最大的人是谁呢？" type="textarea" autosize
+    bind:change="onChangePeople" />
+  <van-field value="{{ text }}" label="留言" placeholder="2021，继续加油！" type="textarea" autosize
+    bind:change="onChangeText" />
+</van-cell-group>
+<button bindtap="insert" class="button">提交</button>
+
+<van-cell is-link title="查看你的2020年度总结" link-type="switchTab" url="/pages/summary/summary" />
+
+<view class="text">
+  <text>
+    如果信息无法上传、填错、误填、删除等
+    请发邮件至：restart30go@163.com
+  </text>
+</view>

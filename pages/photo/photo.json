@@ -1,8 +1,7 @@
 {
   "usingComponents": {
-    "van-tag": "@vant/weapp/tag",
-    "van-divider": "@vant/weapp/divider",
-    "van-count-down": "@vant/weapp/count-down",
+    "van-image": "@vant/weapp/image",
+    "van-overlay": "@vant/weapp/overlay",
     "van-cell": "@vant/weapp/cell",
     "van-cell-group": "@vant/weapp/cell-group"
   },

@@ -1,0 +1,66 @@
+<!--pages/runin/runin.wxml-->
+
+<view class="title">
+  <text>立下你的运动flag</text>
+</view>
+
+<van-cell-group>
+  <van-field value="{{ name }}" label="昵称" placeholder="请输入你的昵称" required bind:change="onChangeName" />
+  <van-field value="{{ title }}" label="项目" placeholder="跑步、瑜伽、骑行、走路、健身等" required bind:change="onChangeTitle" />
+  <van-field value="{{ number }}" label="数字" placeholder="请输入数字" required type="textarea" autosize
+    bind:change="onChangeNum" />
+  <van-field value="{{ uint }}" label="单位" placeholder="km、h、个等" type="textarea" required autosize
+    bind:change="onChangeUint" />
+  <van-field value="{{ endtime }}" label="时间" placeholder="计划完成时间，格式：2021/06/30" type="textarea" required autosize
+    bind:change="onChangeTime" />
+  <van-field value="{{ color }}" label="颜色" placeholder="格式：#" type="textarea" required autosize
+    bind:change="onChangeColor" />
+</van-cell-group>
+
+<view>
+  <view class="text">
+    <text>
+      可填写任意你喜欢颜色的16进制，以#开头，作为你的专属Flag色
+    </text>
+  </view>
+  <view class="progress">
+    <van-progress percentage="30" pivot-text="#ef4f4f" color="#ef4f4f" stroke-width="16" />
+  </view>
+  <view class="progress">
+    <van-progress percentage="40" pivot-text="#ee9595" color="#ee9595" stroke-width="16" />
+  </view>
+  <view class="progress">
+    <van-progress percentage="50" pivot-text="#ffcda3" color="#ffcda3" stroke-width="16" />
+  </view>
+  <view class="progress">
+    <van-progress percentage="60" pivot-text="#74c7b8" color="#74c7b8" stroke-width="16" />
+  </view>
+  <view class="progress">
+    <van-progress percentage="70" pivot-text="#649EB2" color="#649EB2" stroke-width="16" />
+  </view>
+
+</view>
+
+<view class="text">
+  <text>
+    参考：
+    张三-跑步-100-km-2021/12/31-#74c7b8
+    李四-瑜伽-100-h-2021/06/30-#00587a
+    王五-跳绳-150-个-2021/01/31-#16c79a
+  </text>
+</view>
+
+<button bindtap="insert" class="button">提交</button>
+
+<view class="text">
+  <text>
+    出现“提交成功”标志，即为提交成功
+  </text>
+</view>
+
+<view class="text">
+  <text>
+    如果信息无法上传、填错、误填、删除等
+    请发邮件至：restart30go@163.com
+  </text>
+</view>

@@ -1,9 +1,7 @@
-// pages/summary/summary.js
-
+// 初始化数据库
 wx.cloud.init()
-const db = wx.cloud.database(); // 初始化数据库
+const db = wx.cloud.database(); 
 
-const util = require('../../utils/util.js')
 Page({
 
   /**
@@ -11,21 +9,25 @@ Page({
    */
   data: {
     width:0,
-    height:0,    
-    time:"",
-    timeData: {},
-    summary:[],
-    sumNum:0,
+    height:0,
+    widthImg:0,
+    heightImg:0,
+    Img:[],
+    imgNum:0, // 图片的初始数量
   },
 
-  
+  onClickImg: function(event){
+    var imgUrl = event.currentTarget.dataset.url;
+    wx.previewImage({
+      urls: [imgUrl], //需要预览的图片http链接列表，注意是数组
+      current: '', // 当前显示图片的http链接，默认是第一个      
+      })
+    },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    
-    
+  onLoad: function (options) {    
 
   },
 
@@ -33,13 +35,13 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    db.collection('summary2020')
-    .orderBy('time', 'desc')
+    db.collection('photo').limit(18)
+    .orderBy('fileID','desc')
     .get({      
       success: res => {
         //console.log(res.data)            
         this.setData({
-          summary: res.data
+          Img: res.data
         })
       }
     })
@@ -54,8 +56,13 @@ Page({
     this.setData({
       width:width,
       height:height
-    })    
-  }, 
+    }) 
+    this.setData({
+      widthImg:width/3.3,
+      heightImg:height/3.3
+    }) 
+
+  },
 
   /**
    * 生命周期函数--监听页面隐藏
@@ -84,26 +91,27 @@ Page({
    */
   onReachBottom: function () {
     wx.showLoading({
-      title: '总结加载中',
+      title: '照片刷新中',
       duration: 1000
     })    
-    let x = this.data.sumNum + 20
+    let x = this.data.imgNum + 18
     //console.log(x)
-    let oldSum = this.data.summary
-    db.collection('summary2020').orderBy('time','desc').skip(x) 
+    let oldImg = this.data.Img
+    db.collection('photo').orderBy('fileID','desc').skip(x) 
     // 限制返回数量为 20 条
       .get()
       .then(res => {
       // 利用concat函数连接新数据与旧数据      
         this.setData({
-          summary: oldSum.concat(res.data),
-          sumNum: x
+          Img: oldImg.concat(res.data),
+          imgNum: x
         })
         //console.log(res.data)
       })
       .catch(err => {
         console.error(err)
       })
+    //console.log('circle 下一页');
 
   },
 

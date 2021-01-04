@@ -1,9 +1,9 @@
-// pages/summary/summary.js
+// pages/run/run.js
 
 wx.cloud.init()
 const db = wx.cloud.database(); // 初始化数据库
-
 const util = require('../../utils/util.js')
+
 Page({
 
   /**
@@ -11,11 +11,13 @@ Page({
    */
   data: {
     width:0,
-    height:0,    
+    height:0,
+    datetimeTo: "2022/1/1 00:00:00 GMT+0800", // 开始时间
+    timeLeft: "",   // 剩下的时间（天时分秒）
     time:"",
     timeData: {},
-    summary:[],
-    sumNum:0,
+    plan:[],
+    planNum:0,
   },
 
   
@@ -24,8 +26,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
-    
 
   },
 
@@ -33,16 +33,17 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    db.collection('summary2020')
-    .orderBy('time', 'desc')
+    db.collection('run21')
+    .orderBy('endtime','asc')
     .get({      
       success: res => {
         //console.log(res.data)            
         this.setData({
-          summary: res.data
+          plan: res.data
         })
       }
     })
+
   },
 
   /**
@@ -54,8 +55,15 @@ Page({
     this.setData({
       width:width,
       height:height
-    })    
-  }, 
+    })
+    // 计算倒计时
+    this.data.timer = setInterval(() =>{ 
+      this.setData({
+        timeLeft: util.getTimeLeft(this.data.datetimeTo)
+      });     
+    }, 1000);
+
+  },
 
   /**
    * 生命周期函数--监听页面隐藏
@@ -77,6 +85,7 @@ Page({
   onPullDownRefresh: function () {
     this.onReady()  
     wx.stopPullDownRefresh()
+
   },
 
   /**
@@ -84,20 +93,20 @@ Page({
    */
   onReachBottom: function () {
     wx.showLoading({
-      title: '总结加载中',
+      title: 'flag加载中',
       duration: 1000
     })    
-    let x = this.data.sumNum + 20
+    let x = this.data.planNum + 20
     //console.log(x)
-    let oldSum = this.data.summary
-    db.collection('summary2020').orderBy('time','desc').skip(x) 
+    let oldPlan = this.data.plan
+    db.collection('run21').orderBy('endtime','asc').skip(x) 
     // 限制返回数量为 20 条
       .get()
       .then(res => {
       // 利用concat函数连接新数据与旧数据      
         this.setData({
-          summary: oldSum.concat(res.data),
-          sumNum: x
+          plan: oldPlan.concat(res.data),
+          planNum: x
         })
         //console.log(res.data)
       })

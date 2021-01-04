@@ -1,0 +1,32 @@
+<!--pages/song/song.wxml-->
+
+<view wx:for="{{song}}" wx:key="item">
+  <view class="part">
+    <image class="imag" src="{{item.img}}" mode="widthFix"></image>
+    <view>
+
+      <view class="title">
+        <van-tag class="tag" size="medium" type="warning">{{index+1}}</van-tag>
+        <text>{{item.song}}</text>
+      </view>
+      <view class="info">
+        <text>{{item.author}}</text>
+      </view>
+      <view class="info">
+        <van-rate readonly value="{{ item.rate }}" />
+      </view>
+      <view class="info">
+        <text>{{item.name}} 推荐</text>
+      </view>
+
+     
+    </view>
+  </view>
+  <view class="text">
+    <text>{{item.text}}</text>
+  </view>
+  <view class="divider">
+    <van-divider />
+  </view>
+
+</view>

@@ -1,0 +1,17 @@
+<!--pages/photo/photo.wxml-->
+<van-cell-group>
+  <van-field label="昵称" value="{{ name }}" placeholder="请输入你的昵称" border="{{ false }}" bind:change="onChangeName" required/>
+</van-cell-group>
+<button bindtap="upload">上传照片</button>
+
+<view class="text">
+<text>
+目前出现部分同学乱传照片的情况
+所以取消了群相册实时展示功能
+我们将在整理后再公布群相册
+</text>
+<text>
+如果信息无法上传、填错、误填、删除等
+请发邮件至：restart30go@163.com
+</text>
+</view>

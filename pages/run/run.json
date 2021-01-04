@@ -4,7 +4,8 @@
     "van-divider": "@vant/weapp/divider",
     "van-count-down": "@vant/weapp/count-down",
     "van-cell": "@vant/weapp/cell",
-    "van-cell-group": "@vant/weapp/cell-group"
+    "van-cell-group": "@vant/weapp/cell-group",
+    "van-progress": "@vant/weapp/progress"
   },
   "enablePullDownRefresh": true
 }

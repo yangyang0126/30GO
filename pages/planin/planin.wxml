@@ -1,7 +1,7 @@
 <!--pages/planin/planin.wxml-->
 
 <van-cell-group>
-  <van-field value="{{ name }}" label="昵称" placeholder="请输入你的昵称" required bind:change="onChangeName" /> 
+  <van-field value="{{ name }}" label="昵称" placeholder="请输入你的昵称" required bind:change="onChangeName" />
   <van-field value="{{ learn }}" label="学习" placeholder="你打算学习什么新知识？" required type="textarea" autosize
     bind:change="onChangeLearn" />
   <van-field value="{{ certificate }}" label="证书" placeholder="你打算考个证书吗？" required type="textarea" autosize
@@ -33,3 +33,10 @@
 <button bindtap="insert" class="button">提交</button>
 
 <van-cell is-link title="查看你的年度flag" link-type="switchTab" url="/pages/plan/plan" />
+
+<view class="text">
+  <text>
+    如果信息无法上传、填错、误填、删除等
+    请发邮件至：restart30go@163.com
+  </text>
+</view>

@@ -7,40 +7,40 @@
   <van-count-down class="countDown-time" time="{{timeLeft}}" format="DD 天 HH 时 mm 分 ss 秒" />
 </view>
 
-<van-cell is-link title="填写你的2021年度flag" link-type="navigateTo" url="/pages/planin/planin" />
+<!-- <van-cell is-link title="填写你的2021年度flag" link-type="navigateTo" url="/pages/planin/planin" /> -->
 
 <view class="plan" wx:for="{{plan}}" wx:key="item">
 
   <van-divider contentPosition="right"
     customStyle="color: #175552; border-color: #175552; font-size: 16px;font-weight: bold;  ">
-    {{item.name}}
+    【{{index+1}}】 {{item.name}}
   </van-divider>
   <view class="part">
-    <van-tag color="#ff9200" class="part-title">学习</van-tag>
+    <van-tag type="warning" class="part-title">学习</van-tag>
     <text class="part-text">{{item.learn}}</text>
   </view>
   <view class="part">
-    <van-tag color="#ff9200" class="part-title">证书</van-tag>
+    <van-tag type="warning" class="part-title">证书</van-tag>
     <text class="part-text">{{item.certificate}}</text>
   </view>
   <view class="part">
-    <van-tag color="#ff9200" class="part-title">读书</van-tag>
+    <van-tag type="warning" class="part-title">读书</van-tag>
     <text class="part-text">{{item.read}}</text>
   </view>
   <view class="part">
-    <van-tag color="#ff9200" class="part-title">运动</van-tag>
+    <van-tag type="warning" class="part-title">运动</van-tag>
     <text class="part-text">{{item.sport}}</text>
   </view>
   <view class="part">
-    <van-tag color="#ff9200" class="part-title">城市</van-tag>
+    <van-tag type="warning" class="part-title">城市</van-tag>
     <text class="part-text">{{item.city}}</text>
   </view>
   <view class="part">
-    <van-tag color="#ff9200" class="part-title">改变</van-tag>
+    <van-tag type="warning" class="part-title">改变</van-tag>
     <text class="part-text">{{item.change}}</text>
   </view>
   <view class="part">
-    <van-tag color="#ff9200" class="part-title">时间</van-tag>
+    <van-tag type="warning" class="part-title">时间</van-tag>
     <text class="part-text">{{item.time}} 立下 flag</text>
   </view>
 </view>

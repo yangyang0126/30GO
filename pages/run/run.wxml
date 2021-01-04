@@ -1,0 +1,35 @@
+<!--pages/run/run.wxml-->
+<view class='countDown'>
+  <van-tag type="warning" size="large">2021</van-tag>
+  <text class="countDown-text"> </text>
+  <van-count-down class="countDown-time" time="{{timeLeft}}" format="DD 天 HH 时 mm 分 ss 秒" />
+</view>
+
+<view class="part" wx:for="{{plan}}" wx:key="item">
+
+  <view class="part-title">
+    <view class="part-title-name">
+      <text>{{item.name}}</text>
+    </view>
+    <view class="part-title-endtime">
+      <text>{{item.endtime}}</text>
+    </view>
+  </view>
+
+  <view class="part-content">
+    <view class="part-content-title">
+      <text>{{item.title}}</text>
+    </view>
+    <view class="part-content-percentage">
+      <van-progress :percentage="{{item.rate}}" stroke-width="18" color="{{item.color}}"/>
+    </view>
+    <view class="part-content-number">
+      <text>{{item.number}} {{item.uint}}</text>
+    </view>   
+    
+  </view>
+  <view class="divider">
+    <van-divider /> 
+  </view>
+  
+</view>

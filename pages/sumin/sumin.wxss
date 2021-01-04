@@ -1,0 +1,13 @@
+/* pages/planin/planin.wxss */
+
+.text{
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #505050;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.button{
+  font-size: 15px;
+}

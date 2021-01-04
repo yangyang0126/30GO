@@ -1,39 +1,54 @@
 <!--pages/about/about.wxml-->
 <view class="page">
 
+  <image src="../../img/photo.pngzz"
+    mode="widthFix" class="img"></image>
 
-<image src="cloud://go30-3g574nok08bc31ef.676f-go30-3g574nok08bc31ef-1304589632/微信图片_20201209093523.png" mode="widthFix" class="img"></image>
+  <view class="text">
+    <text>
+      不知不觉，30岁了，回想起曾经蹉跎了的大学时光，不是很精彩的20多岁的种种。30岁还是如约而至。90、00后听的歌自己不再喜欢；最新的歌星明星自己不再熟悉，甚至，对自己的工作、对自己的生活不很满意，和曾经的同学朋友对比后，不时对自己愤愤不已……突然感觉，自己仿佛已经落后了，能有什么办法，再次上路吧。三毛说过：我没来得及认真地年轻，待明白过来时，只能选择认真地老去。
+    </text>
+  </view>
+  <view class="text-name">
+    <text>
+      组长：多多小五月
+    </text>
+  </view>
 
-<van-cell-group>
-  <van-cell title="公众号" value="30 GO" />
-  <van-cell title="网站" value="https://www.notion.so/30-GO-aee4be91176b45919a64e558b4817a51" />
-  <van-cell title="邮箱" value="restart30go@163.com" label="欢迎投稿、留言、反馈问题" border="{{ false }}" />
-</van-cell-group>
+  <view class="title">小组信息</view>
+
+  <van-cell-group>
+    <van-cell title="公众号" value="30 GO" />
+    <van-cell title="网站" value="https://www.notion.so/30-GO-aee4be91176b45919a64e558b4817a51" />
+    <van-cell title="扇贝" value="再次出发的30岁" />
+    <van-cell title="邮箱" value="restart30go@163.com" label="欢迎投稿、留言、反馈问题" border="{{ false }}" />
+
+  </van-cell-group>
 
 
-  <view class="text">开发成员</view>
+  <view class="title">开发成员</view>
 
-<van-cell-group>
-  <van-cell title="小程序" value="洋阳" />
-  <van-cell title="网站" value="Grit" />
-  <van-cell title="设计" value="Sekoan" />
-</van-cell-group>
+  <van-cell-group>
+    <van-cell title="小程序" value="洋阳" />
+    <van-cell title="网站" value="Grit" />
+    <van-cell title="设计" value="Sekoan" />
+  </van-cell-group>
 
 
 
-  <view class="text">群负责人</view>
+  <view class="title">群负责人</view>
 
-<van-cell-group> 
-  <van-cell title="技术群" value="洋阳" />
-  <van-cell title="读书群" value="Abbey" />
-  <van-cell title="翻译群" value="薇" />
-  <van-cell title="口语群" value="喵喵怪" />
-  <van-cell title="单词群" value="胖虎" />
-  <van-cell title="运动群" value="羽琪" />
-  <van-cell title="练字群" value="罱" />
-  <van-cell title="资源群" value="york" />
-  <van-cell title="遇见群" value="林深培" />  
-</van-cell-group>
+  <van-cell-group>
+    <van-cell title="技术群" value="洋阳" />
+    <van-cell title="读书群" value="Abbey" />
+    <van-cell title="翻译群" value="薇" />
+    <van-cell title="口语群" value="喵喵怪" />
+    <van-cell title="单词群" value="胖虎" />
+    <van-cell title="运动群" value="羽琪" />
+    <van-cell title="练字群" value="罱" />
+    <van-cell title="资源群" value="york" />
+    <van-cell title="遇见群" value="林深培" />
+  </van-cell-group>
 
 
 

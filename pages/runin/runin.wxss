@@ -1,0 +1,31 @@
+/* pages/runin/runin.wxss */
+
+.title{
+  color: #ffffff;
+  background-color: #175552;
+  font-size: 18px;  
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.text{
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #505050;
+  font-size: 14px;
+  margin-bottom: 20px; 
+}
+
+.button{
+  font-size: 15px;
+}
+
+.progress{
+  margin-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}

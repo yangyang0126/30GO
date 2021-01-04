@@ -36,7 +36,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    db.collection('plan2021').limit(20)
+    db.collection('plan2021')
     .orderBy('time', 'desc')
     .get({      
       success: res => {
@@ -103,10 +103,10 @@ Page({
       title: '加载flag中',
       duration: 1000
     })    
-    let x = this.data.planNum + 18
+    let x = this.data.planNum + 20
     //console.log(x)
     let oldPlan = this.data.plan
-    db.collection('plan2021').orderBy('time','desc').skip(20) 
+    db.collection('plan2021').orderBy('time','desc').skip(x) 
     // 限制返回数量为 20 条
       .get()
       .then(res => {

@@ -1,52 +1,44 @@
 <!--pages/summary/summary.wxml-->
 
 <view class="year">
-  <van-tag color="#175552" size="large" class="year-now">2020</van-tag>
-  <van-cell is-link value="2019传送门" link-type="navigateTo" url="/pages/sum19/sum19" class="year-old" />
+  <van-tag color="#175552" size="large" class="year-now">2019</van-tag>
 </view>
 
-<!-- <van-cell is-link title="填写你的2020年度总结" link-type="navigateTo" url="/pages/sumin/sumin" /> -->
-
 <view class="summary" wx:for="{{summary}}" wx:key="item">
-
   <van-divider contentPosition="right"
     customStyle="color: #175552; border-color: #175552; font-size: 16px;font-weight: bold;  ">
     【{{index+1}}】 {{item.name}}
   </van-divider>
   <view class="part">
-    <van-tag type="warning" class="part-title">学习</van-tag>
+    <van-tag color="#ff9200" class="part-title">学习</van-tag>
     <text class="part-text">{{item.learn}}</text>
   </view>
   <view class="part">
-    <van-tag type="warning" class="part-title">证书</van-tag>
+    <van-tag color="#ff9200" class="part-title">证书</van-tag>
     <text class="part-text">{{item.certificate}}</text>
   </view>
   <view class="part">
-    <van-tag type="warning" class="part-title">读书</van-tag>
+    <van-tag color="#ff9200" class="part-title">读书</van-tag>
     <text class="part-text">{{item.read}}</text>
   </view>
   <view class="part">
-    <van-tag type="warning" class="part-title">运动</van-tag>
+    <van-tag color="#ff9200" class="part-title">运动</van-tag>
     <text class="part-text">{{item.sport}}</text>
   </view>
   <view class="part">
-    <van-tag type="warning" class="part-title">城市</van-tag>
+    <van-tag color="#ff9200" class="part-title">城市</van-tag>
     <text class="part-text">{{item.city}}</text>
   </view>
   <view class="part">
-    <van-tag type="warning" class="part-title">改变</van-tag>
+    <van-tag color="#ff9200" class="part-title">改变</van-tag>
     <text class="part-text">{{item.change}}</text>
   </view>
   <view class="part">
-    <van-tag type="warning" class="part-title">人物</van-tag>
+    <van-tag color="#ff9200" class="part-title">人物</van-tag>
     <text class="part-text">{{item.people}}</text>
   </view>
   <view class="part">
-    <van-tag type="warning" class="part-title">留言</van-tag>
-    <text class="part-text">{{item.text}}</text>
-  </view>
-  <view class="part">
-    <van-tag type="warning" class="part-title">时间</van-tag>
+    <van-tag color="#ff9200" class="part-title">时间</van-tag>
     <text class="part-text">{{item.time}} 留下总结</text>
   </view>
 </view>

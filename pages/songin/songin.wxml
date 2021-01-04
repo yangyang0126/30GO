@@ -1,0 +1,30 @@
+<!--pages/song/song.wxml-->
+
+<view class="title">
+  <text>一人一首歌</text>
+</view>
+
+<van-cell-group>
+  <van-field value="{{ name }}" label="推荐人" placeholder="请输入你的昵称" required bind:change="onChangeName" />
+  <van-field value="{{ song }}" label="推荐歌曲" placeholder="请输入歌曲名字" required bind:change="onChangeSong" />
+  <van-field value="{{ author }}" label="演唱者" placeholder="请输入歌曲演唱者" required type="textarea" autosize
+    bind:change="onChangeAuthor" />
+  <van-field value="{{ text }}" label="推荐理由" placeholder="请输入推荐理由" type="textarea" required autosize
+    bind:change="onChangeText" />
+</van-cell-group>
+
+<button bindtap="insert" class="button">提交</button>
+
+<view class="text">
+  <text>
+    出现“提交成功”标志，即为提交成功
+    歌单将在整理后公布在小程序
+  </text>
+</view>
+
+<view class="text">
+  <text>
+    如果信息无法上传、填错、误填、删除等
+    请发邮件至：restart30go@163.com
+  </text>
+</view>

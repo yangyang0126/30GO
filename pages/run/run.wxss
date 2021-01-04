@@ -1,0 +1,67 @@
+/* pages/run/run.wxss */
+
+.part{
+  color: #333333;
+  font-size: 14px;
+}
+
+.part-title{
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.part-title-tag{
+  margin-left: 10px;
+}
+
+.part-title-name{
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.part-title-endtime{
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.part-content{
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.part-content-title{
+  width: 15%;
+  margin-left: 10px;
+}
+
+.part-content-percentage{
+  width: 60%;
+}
+
+.part-content-number{
+  width: 25%;
+  margin-left: 10px;
+}
+
+.countDown{
+  display: flex;
+  font-size: 14px;  
+  margin-left: 10px;
+  margin-right: 30px;
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+.countDown-text{
+  margin-left: 10px;
+  margin-right: 10px;  
+}
+
+.countDown-time{
+  padding-top: 2px;
+}
+
+.divider{
+  margin-left: 10px;
+  margin-right: 10px;  
+}

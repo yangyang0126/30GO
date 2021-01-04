@@ -33,7 +33,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    db.collection('summary2020')
+    db.collection('summary2019')
     .orderBy('time', 'desc')
     .get({      
       success: res => {
@@ -90,7 +90,7 @@ Page({
     let x = this.data.sumNum + 20
     //console.log(x)
     let oldSum = this.data.summary
-    db.collection('summary2020').orderBy('time','desc').skip(x) 
+    db.collection('summary2019').orderBy('time','desc').skip(x) 
     // 限制返回数量为 20 条
       .get()
       .then(res => {

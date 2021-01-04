@@ -1,0 +1,6 @@
+/* pages/index/index.wxss */
+
+.title{
+  margin-left: 10px;
+  margin-top: 25px;
+}
