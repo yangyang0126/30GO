@@ -1,0 +1,2 @@
+<!--pages/myflag/myflag.wxml-->
+<van-button type="warning">上传或更新进度</van-button>

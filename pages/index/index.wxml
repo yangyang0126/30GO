@@ -1,41 +1,38 @@
 <!--pages/index/index.wxml-->
 
-<view class="title">
-  <van-tag type="warning" size="large">小组群像</van-tag>
-</view>
-<view>
-  <van-cell is-link title="小组相册" link-type="navigateTo" url="/pages/photoin/photoin" />
-</view>
+
 
 <view class="title">
   <van-tag type="warning" size="large">年度计划</van-tag>
 </view>
 <view>
-  <van-cell is-link title="2021年度flag" link-type="switchTab" url="/pages/plan/plan" />
+  <van-cell is-link title="2021年度flag" link-type="navigateTo" url="/pages/plan/plan" label="本次填写已经截至" />
+  <!-- <van-cell title="2022年度flag" value="将于2021年末开放填写" /> -->
 </view>
 
 <view class="title">
   <van-tag type="warning" size="large">年度总结</van-tag>
 </view>
 <view>
-  <van-cell is-link title="2020年度总结" link-type="switchTab" url="/pages/summary/summary" />
+  <van-cell is-link title="2020年度总结" link-type="navigateTo" url="/pages/summary/summary" />
 <van-cell is-link title="2019年度总结" link-type="navigateTo" url="/pages/sum19/sum19" />
+<!-- <van-cell title="2021年度总结" value="将于2021年末开放填写" /> -->
 </view>
 
 <view class="title">
   <van-tag type="warning" size="large">年度运动</van-tag>
 </view>
 <view> 
-  <van-cell is-link title="2021年运动进度" link-type="navigateTo" url="/pages/run/run" />
-  <van-cell is-link title="2021运动flag征集" link-type="navigateTo" url="/pages/runin/runin" />
+  <van-cell is-link title="2021年运动进度" link-type="navigateTo" url="/pages/run/run" label="请在小组Keep群提交"/>
+  <van-cell is-link title="2021运动flag征集" link-type="navigateTo" url="/pages/runin/runin" /> 
 </view>
 
 <view class="title">
   <van-tag type="warning" size="large">年度歌单</van-tag>
 </view>
 <view> 
-  <van-cell is-link title="2020年度歌单" link-type="navigateTo" url="/pages/song/song" />
-  <van-cell is-link title="歌单征集" link-type="navigateTo" url="/pages/songin/songin" />
+  <van-cell is-link title="2020年度歌单" link-type="navigateTo" url="/pages/song/song"/>
+  <!-- <van-cell is-link title="歌单征集" link-type="navigateTo" url="/pages/songin/songin" /> -->
 </view>
 
 <view class="title">
@@ -48,3 +45,9 @@
 </view> -->
 
 
+<view class="title">
+  <van-tag type="warning" size="large">小组群像</van-tag>
+</view>
+<view>
+  <van-cell is-link title="小组相册" link-type="navigateTo" url="/pages/photoin/photoin" />
+</view>

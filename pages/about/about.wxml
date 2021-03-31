@@ -1,7 +1,7 @@
 <!--pages/about/about.wxml-->
 <view class="page">
 
-  <image src="../../img/photo.pngzz"
+  <image src="../../img/photo.png"
     mode="widthFix" class="img"></image>
 
   <view class="text">
@@ -18,9 +18,11 @@
   <view class="title">小组信息</view>
 
   <van-cell-group>
-    <van-cell title="公众号" value="30 GO" />
-    <van-cell title="网站" value="https://www.notion.so/30-GO-aee4be91176b45919a64e558b4817a51" />
+    <van-cell title="公众号" value="30 GO" />    
+    <van-cell title="新浪微博" value="30GO" />
+    <van-cell title="新浪超话" value="再次出发的30岁" />
     <van-cell title="扇贝" value="再次出发的30岁" />
+    <van-cell title="网站" value="https://www.notion.so/30-GO-aee4be91176b45919a64e558b4817a51" />
     <van-cell title="邮箱" value="restart30go@163.com" label="欢迎投稿、留言、反馈问题" border="{{ false }}" />
 
   </van-cell-group>
@@ -48,6 +50,7 @@
     <van-cell title="练字群" value="罱" />
     <van-cell title="资源群" value="york" />
     <van-cell title="遇见群" value="林深培" />
+    <van-cell title="小语种群" value="Laila" />
   </van-cell-group>
 
 

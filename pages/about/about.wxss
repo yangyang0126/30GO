@@ -1,6 +1,6 @@
 /* pages/about/about.wxss */
 .page{
-  background-color: #175552;
+  background-color: #2f4f4f;
   color: #ffffff;
 }
 

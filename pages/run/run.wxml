@@ -21,15 +21,15 @@
       <text>{{item.title}}</text>
     </view>
     <view class="part-content-percentage">
-      <van-progress :percentage="{{item.rate}}" stroke-width="18" color="{{item.color}}"/>
+      <van-progress wx:if="{{item.name}}" percentage="{{item.rate}}" stroke-width="12" color="{{item.color}}" />
     </view>
     <view class="part-content-number">
       <text>{{item.number}} {{item.uint}}</text>
-    </view>   
-    
+    </view>
+
   </view>
-  <view class="divider">
-    <van-divider /> 
+  <view class="divider" wx:if="{{item.name}}">
+    <van-divider />
   </view>
-  
+
 </view>

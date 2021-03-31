@@ -71,7 +71,7 @@ Page({
         number:this.data.number,
         uint:this.data.uint,
         color:this.data.color,
-        rate:10
+        rate:0
         }
     }      
     )
